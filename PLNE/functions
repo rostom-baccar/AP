@@ -1,0 +1,11 @@
+create_root_node() -> Node:
+
+extract_next_node(nodes: List[Node]) ->Node:
+
+is_empty(nodes: List[Node]):
+
+compare_solutions(problem: minilp.problem, l: minilp.result, r: minilp.result) -> bool:
+
+find_first_non_integral(
+    problem: minilp.problem, result: minilp.result, eps: float = 1e-6
+	     ) -> Optional[minilp.var]:
