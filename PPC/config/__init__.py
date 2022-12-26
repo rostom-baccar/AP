@@ -6,7 +6,8 @@ from docplex.cp.config import set_default, get_default, LOCAL_CONTEXT
 
 DEFAULT_STUDENT_PARAMETERS = {
     'Presolve': 'Off',
-    'Workers': 1
+    'Workers': 1,
+    'SearchType' : 'DepthFirst'
 }
 
 CPOPTIMIZER_EXEC = "cpoptimizer"
@@ -29,7 +30,7 @@ def setup(**kargs):
     # Switch to local context
     set_default(LOCAL_CONTEXT)
     #Change this if you use your local machine with your installation and the right version 
-    #os.environ['PATH'] += ':' + INSA_CPOPTIMIZER_PATH
+    os.environ['PATH'] += ':' + INSA_CPOPTIMIZER_PATH
     #My local installation 
-    os.environ['PATH'] += ':/Users/msiala/Applications/CPLEX_Studio129/cpoptimizer/bin/x86-64_osx'
+    #os.environ['PATH'] += ':/Users/msiala/Applications/CPLEX_Studio129/cpoptimizer/bin/x86-64_osx'
     
